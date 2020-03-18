@@ -55,6 +55,7 @@ function waitForElementToDisplay(selector, time) {
       let attedense = removeDups(arr).sort((a, b) => a.split(' ')[1] < b.split(' ')[1] ? -1 : 1)
 
       navigator.clipboard.writeText(add_emoji(attedense, klass).toString().replace(/,/g, "\n"))
+      console.log("Copied text")
     })
     return
   }
