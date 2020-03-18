@@ -3,16 +3,17 @@
 // @namespace   Get classlist by E, D, E
 // @match       https://meet.google.com/*
 // @grant       none
-// @version     1.0.1
+// @version     1.0.2
 // @downloadURL https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
 // @updateURL   https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
 // @author      Emrik <e@mrik.ga>
 // @description 2020-03-18 23:12:15
 // ==/UserScript==
 
-
+let status = false
 function waitForElementToDisplay(selector, time) {
   if(document.querySelector(selector) != null) {
+    status = true
     console.log("merging with button now")
     document.querySelector(selector).addEventListener("click", function(){
       var arr = []
@@ -47,4 +48,20 @@ function waitForElementToDisplay(selector, time) {
     }, time)
   }
 }
-waitForElementToDisplay(".anXpBf", 3000)
+
+if (status == false) {
+  waitForElementToDisplay(".anXpBf", 3000)
+}
+
+
+function checkElement(selector) {
+  if (status == true && document.querySelector(selector) == null) {
+    status == false
+    waitForElementToDisplay(selector, 3000)
+    console.log("försöker nu igen")
+  }
+  setTimeout(function(){
+    checkElement(selector)
+  }, 10000)
+}
+checkElement(".anXpBf")
