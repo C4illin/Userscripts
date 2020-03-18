@@ -3,10 +3,10 @@
 // @namespace   Get classlist by E, D, E
 // @match       https://meet.google.com/*
 // @grant       none
-// @version     1.0.2
+// @version     1.1.0
 // @downloadURL https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
 // @updateURL   https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
-// @author      Emrik <e@mrik.ga>
+// @author      Emrik Daniel och Edvin <e@mrik.ga>
 // @description 2020-03-18 23:12:15
 // ==/UserScript==
 
@@ -37,8 +37,24 @@ function waitForElementToDisplay(selector, time) {
         })
         return Object.keys(unique)
       }
-    
-      navigator.clipboard.writeText(removeDups(arr).sort((a, b) => a.split(' ')[1] < b.split(' ')[1] ? -1 : 1).toString().replace(/,/g, "\n"))
+
+      function add_emoji(array,classNames) {
+        var out = []
+        for (var i = 0; i < classNames.length; i++) {
+          if (array.includes(classNames[i])){
+            out.push("✔️ " + (classNames[i].split(" "))[0])
+          } else {
+            out.push("❌ " + (classNames[i].split(" "))[0])
+          }
+        }
+        return out
+      }
+      
+      const klass = ["Lukas Abel", "Dadi Andrason", "Oliver Andreasson", "Lukas Artursson", "Fabian Beskow", "Joel Båtsman Hilmersson", "Julius Eliasson", "Elias Falk", "Petter Halling", "Erik Hellman", "Vincent Hellner", "Anton Håkansson", "Petter Isaksson", "Kevin Jeryd", "Felix Johansson", "Alexander Kjellberg", "Simon Lindwall", "Oscar Litorell", "Edvin Lundqvist Sternvik", "Patrik Lussi", "Joel Martinsson", "Edvin Nilsson", "Daniel Persson", "Gabriel Pfeiffer", "Erik Päts", "Filip Rakic", "Christoffer Ridderland", "Anton Roegner Kinnmark", "Isak Roos", "Johan Scherman", "Jonathan Sundh", "Johan Wheeler", "Emrik Östling"]
+
+      let attedense = removeDups(arr).sort((a, b) => a.split(' ')[1] < b.split(' ')[1] ? -1 : 1)
+
+      navigator.clipboard.writeText(add_emoji(attedense, klass).toString().replace(/,/g, "\n"))
     })
     return
   }
