@@ -3,8 +3,10 @@
 // @namespace   Get classlist by E, D, E
 // @match       https://meet.google.com/*
 // @grant       none
-// @version     1.0
-// @author      -
+// @version     1.0.1
+// @downloadURL https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
+// @updateURL   https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
+// @author      Emrik <e@mrik.ga>
 // @description 2020-03-18 23:12:15
 // ==/UserScript==
 
@@ -23,7 +25,7 @@ function waitForElementToDisplay(selector, time) {
         }
       }
     
-      arr.push("Emrik Östling")
+      arr.push(document.querySelector("div.XWGOtd:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1)").innerHTML.slice(0, -5))
     
       function removeDups(names) {
         let unique = {}
