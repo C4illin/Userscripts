@@ -3,7 +3,7 @@
 // @namespace   Get classlist by E, D, E
 // @match       https://meet.google.com/*
 // @grant       none
-// @version     1.1.0
+// @version     1.1.1
 // @downloadURL https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
 // @updateURL   https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
 // @author      Emrik Daniel och Edvin <e@mrik.ga>
@@ -50,7 +50,7 @@ function waitForElementToDisplay(selector, time) {
         return out
       }
       
-      const klass = ["Lukas Abel", "Dadi Andrason", "Oliver Andreasson", "Lukas Artursson", "Fabian Beskow", "Joel Båtsman Hilmersson", "Julius Eliasson", "Elias Falk", "Petter Halling", "Erik Hellman", "Vincent Hellner", "Anton Håkansson", "Petter Isaksson", "Kevin Jeryd", "Felix Johansson", "Alexander Kjellberg", "Simon Lindwall", "Oscar Litorell", "Edvin Lundqvist Sternvik", "Patrik Lussi", "Joel Martinsson", "Edvin Nilsson", "Daniel Persson", "Gabriel Pfeiffer", "Erik Päts", "Filip Rakic", "Christoffer Ridderland", "Anton Roegner Kinnmark", "Isak Roos", "Johan Scherman", "Jonathan Sundh", "Johan Wheeler", "Emrik Östling"]
+      const klass = ["Lukas Abel", "Dadi Andrason", "Oliver Andreasson", "Lukas Artursson", "Fabian Beskow", "Joel Båtsman Hilmersson", "Julius Eliasson", "Elias Falk", "Petter Halling", "Erik Hellman", "Vincent Hellner", "Anton Håkansson", "Kevin Jeryd", "Felix Johansson", "Alexander Kjellberg", "Simon Lindwall", "Oscar Litorell", "Edvin Lundqvist Sternvik", "Patrik Lussi", "Joel Martinsson", "Edvin Nilsson", "Daniel Persson", "Gabriel Pfeiffer", "Erik Päts", "Filip Rakic", "Christoffer Ridderland", "Anton Roegner Kinnmark", "Isak Roos", "Johan Scherman", "Jonathan Sundh", "Johan Wheeler", "Emrik Östling"]
 
       let attedense = removeDups(arr).sort((a, b) => a.split(' ')[1] < b.split(' ')[1] ? -1 : 1)
 
