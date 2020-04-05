@@ -8,9 +8,9 @@
 // @author      C4illin <C@illin.cf>
 // @oujs:author C4illin
 // @version     1.1.4
-// @downloadURL https://github.com/C4illin/Change-Google-Classroom-User/raw/master/ChangeClassroom.user.js
-// @updateURL   https://github.com/C4illin/Change-Google-Classroom-User/raw/master/ChangeClassroom.user.js
-// @homepageURL https://github.com/C4illin/Change-Google-Classroom-User
+// @downloadURL https://github.com/C4illin/Userscripts/raw/master/Change-Google-Classroom-User/ChangeClassroom.user.js
+// @updateURL   https://github.com/C4illin/Userscripts/raw/master/Change-Google-Classroom-User/ChangeClassroom.user.js
+// @homepageURL https://github.com/C4illin/Userscripts/tree/master/Change-Google-Classroom-User
 // @license     MIT; https://opensource.org/licenses/MIT
 // @copyright   2018-2019, C4illin (https://github.com/C4illin)
 // ==/UserScript==
