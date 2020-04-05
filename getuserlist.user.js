@@ -70,7 +70,6 @@ if (status == false) {
   waitForElementToDisplay(".anXpBf", 3000)
 }
 
-
 function checkElement(selector) {
   if (status == true && document.querySelector(selector) == null) {
     status == false
