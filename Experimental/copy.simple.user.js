@@ -7,6 +7,7 @@
 // @author      C4illin (unfortunately)
 // @description No joke this is so bad
 // @run-at      document-idle
+// @downloadURL https://github.com/C4illin/Userscripts/raw/master/Experimental/copy.simple.user.js
 // ==/UserScript==
 
 let toggleButtonSVG = null
