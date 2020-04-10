@@ -65,18 +65,24 @@ setInterval(() => {
     showListI.onclick = showPeople
     additionalOptions.appendChild(showListI)
 
+    peopleCounter = document.createElement("p")
     peopleList = document.createElement("textarea")
     peopleList.rows = 10
     peopleList.cols = 35
     let attendees = localStorage.getItem("gmca-attendees-list")
     if (attendees) {
       peopleList.value = attendees.replace(/,/g, String.fromCharCode(13, 10))
+      // peopleCounter.innerText = "hmm personer"
+      peopleCounter.innerText(attendees.length - attendees.replace(/,/g, "").length + 1)
+      // peopleCounter.innerText(attendees.split(",").length + " personer")
     } else {
       peopleList.value = "Uppdatera listan"
+      peopleCounter.innerText = "0 personer"
       getAllAttendees()
     }
     peopleList.style.display = "block"
     additionalOptions.appendChild(peopleList)
+    additionalOptions.appendChild(peopleCounter)
 
     const copyList = document.createElement("input")
     copyList.type = "button"
@@ -169,6 +175,7 @@ const getAllAttendees = () => {
     localStorage.setItem("gmca-attendees-list", attendees)
     // console.log(attendees)
     peopleList.value = attendees.join(String.fromCharCode(13, 10))
+    peopleCounter.innerText = attendees.length + " personer"
     // return(attendees)
     setTimeout(() => {
       console.log(toChange)
