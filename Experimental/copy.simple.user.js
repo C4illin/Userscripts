@@ -34,7 +34,7 @@ setInterval(() => {
   let buttons = document.querySelector("[data-fps-request-screencast-cap]").parentElement.parentElement.parentElement
   if ((buttons) && (!buttons.__attendent_ran)) {
     buttons.__attendent_ran = true
-    console.log("Initialized Attendees Script", "background: #FFFFFF; color: #242424")
+    console.log("%c Initialized Attendees Script", "background: #FFFFFF; color: #242424")
 
     buttons.prepend(buttons.children[1].cloneNode())
     const toggleButton = document.createElement("div")
@@ -133,17 +133,36 @@ setInterval(() => {
     compare.appendChild(compareButton)
 
     const hereL = document.createElement("label")
-    const notHereL = document.createElement("label")
-    hereL.innerText = "Här:"
-    notHereL.innerText = "Inte här:"
-    const hereP = document.createElement("div")
-    const notHereP = document.createElement("div")
-    hereP.style.display = "block"
-    notHereP.style.display = "block"
+    hereL.innerText = "Resultat:"
     compare.appendChild(hereL)
-    compare.appendChild(hereP)
-    compare.appendChild(notHereL)
-    compare.appendChild(notHereP)
+
+    const compareResultList = document.createElement("textarea")
+    compareResultList.rows = 10
+    compareResultList.cols = 35
+    compareResultList.value = "Klicka På jämför"
+    compareResultList.style.display = "block"
+    compare.appendChild(compareResultList)
+
+    const copyCompareList = document.createElement("input")
+    copyCompareList.type = "button"
+    copyCompareList.value = "Kopiera lista"
+    copyCompareList.onclick = () => {
+      navigator.clipboard.writeText(compare.children[compare.childElementCount-3].value)
+    }
+    compare.appendChild(copyCompareList)
+
+    const copyCompareListForChat = document.createElement("input")
+    copyCompareListForChat.type = "button"
+    copyCompareListForChat.value = "Kopiera (max 500 tecken)"
+    copyCompareListForChat.onclick = () => {
+      let toCopy = compare.children[compare.childElementCount-3].value
+      while (toCopy.length > 500) {
+        let toCopyArr = toCopy.split("\n")
+        toCopy = toCopyArr.map(elem => elem.slice(0, -1)).join("\n")
+      }
+      navigator.clipboard.writeText(toCopy)
+    }
+    compare.appendChild(copyCompareListForChat)
 
     additionalOptions.appendChild(compare)
 
@@ -162,18 +181,16 @@ const compareLists = () => {
   let current = localStorage.getItem("gmca-attendees-list").split(",")
   let listToCompare = compare.firstChild.value.split("\n")
 
-  let here = []
-  let notHere = []
+  let out = []
   listToCompare.forEach(listItem => {
     if (current.includes(listItem)) {
-      here.push(listItem)
+      out.push("✔️ " + listItem)
     } else {
-      notHere.push(listItem)
+      out.push("❌ " + listItem)
     }
   })
 
-  compare.children[compare.childElementCount-3].innerText = here.join(String.fromCharCode(13, 10))
-  compare.lastChild.innerText = notHere.join(String.fromCharCode(13, 10))
+  compare.children[compare.childElementCount-3].value = out.join(String.fromCharCode(13, 10))
 }
 
 const getAllAttendees = () => {
