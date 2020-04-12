@@ -1,10 +1,12 @@
 // ==UserScript==
-// @name        Copy all users on google meet badly lol
+// @name        DGIT Copy all users on google meet
 // @namespace   meet copy ok?
 // @include     https://meet.google.com/*
 // @grant       none
 // @version     1.0
-// @author      C4illin (unfortunately)
+// @downloadURL https://github.com/itggot-daniel-persson/Userscripts/raw/master/Experimental/copy.simple.user.js
+// @updateURL   https://github.com/itggot-daniel-persson/Userscripts/raw/master/Experimental/copy.simple.user.js
+// @author      Daniel
 // @description No joke this is so bad
 // @run-at      document-idle
 // ==/UserScript==
