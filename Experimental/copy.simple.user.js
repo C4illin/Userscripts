@@ -1,10 +1,10 @@
 // ==UserScript==
-// @name        Copy all users on google meet badly lol
+// @name        DGIT Copy all users on google meet
 // @namespace   meet copy ok?
 // @include     https://meet.google.com/*
 // @grant       none
 // @version     0.0.1
-// @author      C4illin (unfortunately)
+// @author      C4illin & Daniel
 // @description No joke this is so bad
 // @run-at      document-idle
 // ==/UserScript==
@@ -44,16 +44,17 @@ setInterval(() => {
     const additionalOptions = document.createElement("div")
     additionalOptions.onclick = e => e.stopPropagation()
     toggleButton.appendChild(additionalOptions)
+    additionalOptions.id = "attendees-list"
 
-    const updateListI = document.createElement("input")
-    updateListI.type = "button"
-    updateListI.value = "Uppdatera Listan"
+    const updateListI = document.createElement("a")
+    updateListI.id = "update"
     updateListI.onclick = getAllAttendees
     additionalOptions.appendChild(updateListI)
-
-    const showListI = document.createElement("input")
+    
+    const showListI = document.createElement("a")
+    showListI.id = "show_list"
     showListI.type = "button"
-    showListI.value = "Visa/Göm Lista"
+    showListI.innerText = "Visa/Göm Lista"
     showListI.onclick = () => {
       showElement(peopleList)
     }
@@ -155,6 +156,34 @@ setInterval(() => {
 
     additionalOptions.appendChild(compare)
 
+    const s = document.createElement('style')
+    s.innerText = `
+    #update {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      border-radius: 2rem 0 0 2rem;
+      background-image: url('https://img.icons8.com/material/24/000000/update-left-rotation.png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: gainsboro;
+    }
+    
+    #update:hover , #show_list:hover {
+      background-color: dimgrey;
+    }
+    
+    #show_list {
+      display: inline-flex;
+      border-radius: 0 2rem 2rem 0;
+      height: 30px;
+      position: absolute;
+      background-color: gainsboro;
+      padding: 0 9px 0 9px;
+      margin-left: 2px;
+    }
+    `
+    document.body.append(s)
   }
 }, 250)
 
