@@ -58,6 +58,7 @@ setInterval(() => {
     additionalOptions.id = "attendees-list"
 
     const updateListI = document.createElement("input")
+    additionalOptions.id = "update"
     updateListI.type = "button"
     updateListI.value = "Uppdatera Listan"
     updateListI.onclick = getAllAttendees
@@ -166,6 +167,24 @@ setInterval(() => {
     compare.appendChild(copyCompareListForChat)
 
     additionalOptions.appendChild(compare)
+
+    const s = document.createElement('style')
+    s.innerText = `
+    #update {
+      display: flex;
+      width: 30px;
+      height: 30px;
+      border-radius: 2rem;
+      background-repeat: no-repeat;
+      background-image: url('https://img.icons8.com/material/24/000000/update-left-rotation.png');
+
+    }
+    
+    #update:hover {
+      background-color: grey;
+    }
+    
+    `
 
   }
 }, 250)
