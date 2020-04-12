@@ -59,14 +59,14 @@ setInterval(() => {
     toggleButton.appendChild(additionalOptions)
     additionalOptions.id = "attendees-list"
 
-    const updateListI = document.createElement("input")
-    additionalOptions.id = "update"
-    updateListI.type = "button"
+    const updateListI = document.createElement("a")
+    updateListI.id = "update"
     updateListI.value = "Uppdatera Listan"
     updateListI.onclick = getAllAttendees
     additionalOptions.appendChild(updateListI)
-
+    
     const showListI = document.createElement("input")
+    showListI.id = "show_list"
     showListI.type = "button"
     showListI.value = "Visa/Göm Lista"
     showListI.onclick = () => {
@@ -173,21 +173,27 @@ setInterval(() => {
     const s = document.createElement('style')
     s.innerText = `
     #update {
-      display: flex;
+      display: inline-block;
       width: 30px;
       height: 30px;
-      border-radius: 2rem;
-      background-repeat: no-repeat;
+      border-radius: 2rem 0 0 2rem;
       background-image: url('https://img.icons8.com/material/24/000000/update-left-rotation.png');
-
+      background-repeat: no-repeat;
+      background-position: center center;
     }
     
     #update:hover {
-      background-color: grey;
+      background-color: gainsboro;
+      
     }
     
+    #show_list {
+      border-radius: 0 2rem 2rem 0;
+      height: 30px;
+      position: absolute;
+    }
     `
-
+    document.body.append(s)
   }
 }, 250)
 
