@@ -182,12 +182,12 @@ setInterval(() => {
       background-color: gainsboro;
     }
     
-    #update:hover {
+    #update:hover , #show_list:hover {
       background-color: dimgrey;
-      
     }
     
     #show_list {
+      display: inline-flex;
       border-radius: 0 2rem 2rem 0;
       height: 30px;
       position: absolute;
