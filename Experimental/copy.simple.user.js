@@ -55,6 +55,7 @@ setInterval(() => {
     const additionalOptions = document.createElement("div")
     additionalOptions.onclick = e => e.stopPropagation()
     toggleButton.appendChild(additionalOptions)
+    additionalOptions.id = "attendees-list"
 
     const updateListI = document.createElement("input")
     updateListI.type = "button"
