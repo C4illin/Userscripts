@@ -15,7 +15,7 @@ function waitForElementToDisplay(selector, time) {
   if(document.querySelector(selector) != null) {
     status = true
     console.log("merging with button now")
-    document.querySelector(selector).addEventListener("click", function(){
+    document.querySelector(selector).addEventListener("click", function() {
       var arr = []
       var inputs = document.querySelectorAll("div")
       for (var i = 0; i < inputs.length; i++) {
@@ -38,10 +38,10 @@ function waitForElementToDisplay(selector, time) {
         return Object.keys(unique)
       }
 
-      function add_emoji(array,classNames) {
+      function add_emoji(array, classNames) {
         var out = []
         for (var i = 0; i < classNames.length; i++) {
-          if (array.includes(classNames[i])){
+          if (array.includes(classNames[i])) {
             out.push("✔️ " + (classNames[i].split(" "))[0])
           } else {
             out.push("❌ " + (classNames[i].split(" "))[0])
@@ -52,7 +52,7 @@ function waitForElementToDisplay(selector, time) {
       
       const klass = ["Lukas Abel", "Dadi Andrason", "Oliver Andreasson", "Lukas Artursson", "Fabian Beskow", "Joel Båtsman Hilmersson", "Julius Eliasson", "Elias Falk", "Petter Halling", "Erik Hellman", "Vincent Hellner", "Anton Håkansson", "Kevin Jeryd", "Felix Johansson", "Alexander Kjellberg", "Simon Lindwall", "Oscar Litorell", "Edvin Lundqvist Sternvik", "Patrik Lussi", "Joel Martinsson", "Edvin Nilsson", "Daniel Persson", "Gabriel Pfeiffer", "Erik Päts", "Filip Rakic", "Christoffer Ridderland", "Anton Roegner Kinnmark", "Isak Roos", "Johan Scherman", "Jonathan Sundh", "Johan Wheeler", "Emrik Östling"]
 
-      let attedense = removeDups(arr).sort((a, b) => a.split(' ')[1] < b.split(' ')[1] ? -1 : 1)
+      let attedense = removeDups(arr).sort((a, b) => a.split(" ")[1] < b.split(" ")[1] ? -1 : 1)
 
       navigator.clipboard.writeText(add_emoji(attedense, klass).toString().replace(/,/g, "\n"))
       console.log("Copied text")
@@ -76,7 +76,7 @@ function checkElement(selector) {
     waitForElementToDisplay(selector, 3000)
     console.log("försöker nu igen")
   }
-  setTimeout(function(){
+  setTimeout(function() {
     checkElement(selector)
   }, 10000)
 }
