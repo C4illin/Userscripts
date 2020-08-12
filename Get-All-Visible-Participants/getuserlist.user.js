@@ -1,12 +1,12 @@
 // ==UserScript==
 // @name        Get classlist
-// @namespace   Get classlist by E, D, E
+// @namespace   Get classlist by EDE
 // @match       https://meet.google.com/*
 // @grant       none
 // @version     1.1.1
 // @downloadURL https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
 // @updateURL   https://github.com/C4illin/Userscripts/raw/master/getuserlist.user.js
-// @author      Emrik Daniel och Edvin <e@mrik.ga>
+// @author      Emrik, Daniel och Edvin <e@mrik.ga>
 // @description 2020-03-18 23:12:15
 // ==/UserScript==
 

@@ -8,10 +8,14 @@
 
 2. Install the user script by pressing one of the links below and then "Confirm installation".
 
-
-
-### Change Google Classroom User
+## Change Google Classroom User - [Install](https://github.com/C4illin/Userscripts/raw/master/Change-Google-Classroom-User/ChangeClassroom.user.js)
 
 A userscript that changes the Google Classroom user from /u/0/ to /u/1/
 
-https://github.com/C4illin/Change-Google-Classroom-User/raw/master/ChangeClassroom.user.js
+## Prisjakt Redirect Skiper - [Install](https://github.com/C4illin/Userscripts/raw/master/Prisjakt-Redirect-Skiper/PrisjaktRedirectSkiper.user.js)
+
+Skips the "Click Here to Continue" buttons on Pricespy, Prisjakt, Kompario, Ledenicheur, Pagomeno and Hintaopas
+
+## Youtube Allow Fullscreen - [Install](https://github.com/C4illin/Userscripts/raw/master/Youtube-Allow-Fullscreen/YoutubeAllowFullscreen.user.js)
+
+Enables fullscreen on all embeded youtube videos

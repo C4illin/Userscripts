@@ -17,15 +17,9 @@
 // @author      C4illin <C@illin.cf>
 // @oujs:author C4illin
 // @version     1.2.1
-// @downloadURL https://github.com/C4illin/Prisjakt-Redirect-Skiper/raw/master/PrisjaktRedirectSkiper.user.js
-// @updateURL   https://github.com/C4illin/Prisjakt-Redirect-Skiper/raw/master/PrisjaktRedirectSkiper.user.js
-// @supportURL  https://github.com/C4illin/Prisjakt-Redirect-Skiper/issues
-// @homepageURL https://github.com/C4illin/Prisjakt-Redirect-Skiper
 // @license     MIT; https://opensource.org/licenses/MIT
 // @copyright   2018, C4illin (https://github.com/C4illin)
 // ==/UserScript==
-
-
 
 if (window.location.search.endsWith("&go=1") == false) {
   var newlink = window.location.origin + window.location.pathname + window.location.search + "&go=1"
