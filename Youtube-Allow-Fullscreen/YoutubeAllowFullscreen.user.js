@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Youtube Allow Fullscreen
 // @namespace   Youtube Allow Fullscreen by C4illin
-// @description Allows fullscreen always
+// @description View embedded youtube videos in fullscreen on every website
 // @match       https://*/*
 // @match       http://*/*
 // @run-at      document-start
