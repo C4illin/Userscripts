@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name        Change Google Classroom User
 // @namespace   Change Google Classroom User by C4illin
-// @description Swithces between /u/0 & /u/1 on google classroom automatically.
+// @description Switches between /u/0 & /u/1 on google classroom automatically.
 // @match       https://classroom.google.com/*
 // @run-at      document-idle
 // @grant       none
 // @author      C4illin <C@illin.cf>
 // @oujs:author C4illin
-// @version     1.2.0
+// @version     1.2.1
 // @downloadURL https://github.com/C4illin/Userscripts/raw/master/Change-Google-Classroom-User/ChangeClassroom.user.js
 // @updateURL   https://github.com/C4illin/Userscripts/raw/master/Change-Google-Classroom-User/ChangeClassroom.user.js
 // @homepageURL https://github.com/C4illin/Userscripts/tree/master/Change-Google-Classroom-User
