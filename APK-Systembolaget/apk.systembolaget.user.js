@@ -21,6 +21,5 @@ let refresh = setInterval(() => {
     let apkdisplay = main.children[1].cloneNode()
     apkdisplay.innerText = ("APK " + apk).replace(".",",")
     main.append(apkdisplay)
-    
   }
-}, 250)
+}, 200)
