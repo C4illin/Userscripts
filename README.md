@@ -19,3 +19,7 @@ Skips the "Click Here to Continue" buttons on Pricespy, Prisjakt, Kompario, Lede
 ## Youtube Allow Fullscreen - [Install](https://github.com/C4illin/Userscripts/raw/master/Youtube-Allow-Fullscreen/YoutubeAllowFullscreen.user.js)
 
 Enables fullscreen on all embeded youtube videos
+
+## APK Systembolaget - [Install](https://github.com/C4illin/Userscripts/raw/master/APK-Systembolaget/apk.systembolaget.user.js)
+
+Shows the APK on systembolaget product pages
