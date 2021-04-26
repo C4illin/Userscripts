@@ -3,7 +3,7 @@
 // @namespace   APK Systembolaget by C4illin
 // @match       https://www.systembolaget.se/produkt/*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      C4illin
 // @description Adds APK value to product pages
 // @run-at      document-idle
@@ -18,9 +18,9 @@ let refresh = setInterval(() => {
   //console.log("APK: " + apk)
   if (!apk.isNaN){
     clearInterval(refresh)
-    let main = document.getElementsByClassName("css-mggt0o")[0]
-    let apkdisplay = main.children[1].cloneNode()
+    let maind = main[2].firstChild.firstChild
+    let apkdisplay = maind.children[1].cloneNode()
     apkdisplay.innerText = ("APK " + apk).replace(".",",")
-    main.append(apkdisplay)
+    maind.append(apkdisplay)
   }
 }, 200)
