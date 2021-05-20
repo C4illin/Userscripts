@@ -23,3 +23,5 @@ Enables fullscreen on all embeded youtube videos
 ## APK Systembolaget - [Install](https://github.com/C4illin/Userscripts/raw/master/APK-Systembolaget/apk.systembolaget.user.js)
 
 Shows the APK on systembolaget product pages
+
+or view all scripts here: https://greasyfork.org/sv/users/217869-c4illin
