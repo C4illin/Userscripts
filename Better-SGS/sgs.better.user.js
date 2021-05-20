@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Better SGS
 // @namespace   Better SGS by C4illin
-// @match       https://marknad.sgs.se/*
+// @match       https://marknad.sgs.se/pgSearchResult.aspx*
 // @grant       none
 // @version     1.0
 // @author      C4illin
@@ -28,6 +28,14 @@ let refresh = setInterval(() => {
       "Ekbacka":8.2,
       "Fridhemsgatan":5.6,
       "Gibraltar":1.1,
+      "Guldhedstornet":1.4,
+      "Gårda Fabriker":2.9,
+      "Husaren":2,
+      "Högsbohöjd":5.5,
+      "Kaverös":5.5,
+      "Kjellmansgatan":3.4,
+      "Kronhusgatan":2.7,
+      "Kungsladugård":5.2,
     }
 
     let table = document.querySelector("table.table.table-striped")
