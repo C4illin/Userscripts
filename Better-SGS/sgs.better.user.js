@@ -6,7 +6,7 @@
 // @version     1.0
 // @author      C4illin
 // @run-at      document-idle
-// @description Better SGS
+// @description Visar avstånd till Chalmers på sgs hemsida
 // ==/UserScript==
 
 
