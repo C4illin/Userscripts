@@ -6,7 +6,7 @@
 // @match       https://www.systembolaget.se/produkt/*
 // @grant       none
 // @version     1.6
-// @author      C4illin <e@mrik.ga> (https://github.com/C4illin)
+// @author      C4illin <e@mrik.ga>
 // @homepageURL https://alkolist.github.io/
 // @run-at      document-idle
 // ==/UserScript==
