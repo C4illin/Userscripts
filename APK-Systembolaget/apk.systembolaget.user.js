@@ -1,9 +1,10 @@
 // ==UserScript==
 // @name        APK Systembolaget
 // @namespace   APK Systembolaget by C4illin
+// @icon        https://raw.githubusercontent.com/alkolist/alkolist.github.io/main/icon/android-chrome-512x512.png
 // @match       https://www.systembolaget.se/produkt/*
 // @grant       none
-// @version     1.4
+// @version     1.5
 // @author      C4illin
 // @description Adds APK value to product pages
 // @run-at      document-idle
