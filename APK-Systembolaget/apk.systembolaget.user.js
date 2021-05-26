@@ -11,6 +11,8 @@
 // @run-at      document-idle
 // ==/UserScript==
 
+GM_info.script.homepageURL = "https://alkolist.github.io/";
+
 let refresh = setInterval(() => {
   let main = document.querySelector(".col-md-7.offset-md-1")?.children
   if (main) {
