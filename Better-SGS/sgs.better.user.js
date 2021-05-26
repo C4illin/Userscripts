@@ -3,7 +3,7 @@
 // @namespace   Better SGS by C4illin
 // @match       https://marknad.sgs.se/pgSearchResult.aspx*
 // @grant       none
-// @version     1.0
+// @version     1.1
 // @author      C4illin
 // @run-at      document-idle
 // @description Visar avstånd till Chalmers på sgs hemsida
@@ -36,6 +36,20 @@ let refresh = setInterval(() => {
       "Kjellmansgatan":3.4,
       "Kronhusgatan":2.7,
       "Kungsladugård":5.2,
+      "Helmotsrogatan":2.2,
+      "Dr Forselius Backe":2,
+      "Centrala Hisingen":6.5,
+      "Nya Varvet":7.2,
+      "Ostkupan":3.0,
+      "Pennygången":5.0,
+      "Plejaden":6.9,
+      "Postgatan":2.8,
+      "Rosendal":6,
+      "Selma":9.1,
+      "Rotary":1,
+      "Tredje Långgatan":2.6,
+      "Norra Ågatan":3.6,
+      "Östra Kålltorp":5.6
     }
 
     let table = document.querySelector("table.table.table-striped")
