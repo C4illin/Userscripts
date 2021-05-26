@@ -49,7 +49,12 @@ let refresh = setInterval(() => {
       "Rotary":1,
       "Tredje Långgatan":2.6,
       "Norra Ågatan":3.6,
-      "Östra Kålltorp":5.6
+      "Östra Kålltorp":5.6,
+      "Olofshöjd":1.7,
+      "Mandolingatan":7,
+      "Lindholmsallén":6.4,
+      "Kviberg":7.6,
+      "Ceres":6.6
     }
 
     let table = document.querySelector("table.table.table-striped")
