@@ -54,7 +54,14 @@ let refresh = setInterval(() => {
       "Mandolingatan":7,
       "Lindholmsallén":6.4,
       "Kviberg":7.6,
-      "Ceres":6.6
+      "Ceres":6.6,
+      "Volrat Tham":1.1,
+      "Viktor Rydberg":0.8,
+      "Odin":3.1,
+      "Medicinareberget":1.5,
+      "Lilla Torp":4.4,
+      "Hökegårdsgatan":2.4,
+      "Dr Lindhs Gata":1.9,
     }
 
     let table = document.querySelector("table.table.table-striped")
