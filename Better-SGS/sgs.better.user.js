@@ -3,10 +3,10 @@
 // @namespace   Better SGS by C4illin
 // @match       https://marknad.sgs.se/pgSearchResult.aspx*
 // @grant       none
-// @version     1.1
+// @version     1.2
 // @author      C4illin
 // @run-at      document-idle
-// @description Visar avstånd till Chalmers på sgs hemsida
+// @description Visar avstånd till Chalmers på SGS hemsida
 // ==/UserScript==
 
 
