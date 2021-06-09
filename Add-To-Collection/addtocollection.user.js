@@ -16,7 +16,7 @@ var btn_add = document.createElement("BUTTON")
 var collection_window = document.querySelector('div.collectionAddItemsSection')
 collection_window.insertBefore(btn_add,collection_window.firstChild)
 btn_add.setAttribute('id','ASCM_addall')
-jQuery('button#ASCM_addall').html('+')
+document.querySelector("button#ASCM_addall").innerHTML = "+"
 btn_add.style.position = 'absolute'
 btn_add.style.top = '110px'
 btn_add.style.right = '50px'
@@ -29,10 +29,9 @@ btn_add.style.height = '60px'
 btn_add.style['text-decoration'] = 'none'
 // Create "Remove" button
 var btn_rem = document.createElement("BUTTON")
-var collection_window = document.querySelector('div.collectionAddItemsSection')
 collection_window.insertBefore(btn_rem ,collection_window.firstChild)
 btn_rem .setAttribute('id','ASCM_removeall')
-jQuery('button#ASCM_removeall').html('-')
+document.querySelector("button#ASCM_removeall").innerHTML = "-"
 btn_rem.style.position = 'absolute'
 btn_rem.style.top = '110px'
 btn_rem.style.right = '120px'
@@ -45,7 +44,6 @@ btn_rem.style.height = '60px'
 btn_rem.style['text-decoration'] = 'none'
 // Bind "Add" button
 jQuery('button#ASCM_addall').click(function(){
-  var items = []
   var collection_name = jQuery('div.manageCollectionHeader div.breadcrumbs a').eq(2).text().trim()
   var url = new URL(document.location.href)
   var collection_id = url.searchParams.get('id')
