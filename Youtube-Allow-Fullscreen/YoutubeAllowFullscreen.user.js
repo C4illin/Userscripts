@@ -8,7 +8,7 @@
 // @grant       none
 // @author      C4illin
 // @oujs:author C4illin
-// @version     1.1.1
+// @version     1.1.2
 // @license     MIT; https://opensource.org/licenses/MIT
 // @copyright   2021, C4illin (https://github.com/C4illin)
 // ==/UserScript==
@@ -17,10 +17,11 @@
 // for some reason it seems to circumvent featurePolicy if you are fast enough :)
 setInterval(() => {
   if (!window.location.href.startsWith("https://www.youtube.com/")) {
-    let iframes = document.querySelectorAll('iframe[src^="https://www.youtube.com/embed/"]')
+    let iframes = document.querySelectorAll('iframe[src^="https://www.youtube.com/embed/"]:not([allowfullscreen])')
     iframes.forEach((elem) => {
       elem.setAttribute('allowFullScreen', '')
       elem.setAttribute('allow','fullscreen')
+      iframe.src = iframe.src; //Reload iframe, thanks to https://greasyfork.org/en/scripts/398281-allow-full-screen-on-embedded-youtube
     })
   } else if (window.location.href.startsWith("https://www.youtube.com/embed")) {
     let fullscreenButton = document.getElementsByClassName("ytp-fullscreen-button")[0]
