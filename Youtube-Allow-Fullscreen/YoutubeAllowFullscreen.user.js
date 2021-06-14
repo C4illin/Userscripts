@@ -8,9 +8,9 @@
 // @grant       none
 // @author      C4illin
 // @oujs:author C4illin
-// @version     1.1.0
+// @version     1.1.1
 // @license     MIT; https://opensource.org/licenses/MIT
-// @copyright   2020, C4illin (https://github.com/C4illin)
+// @copyright   2021, C4illin (https://github.com/C4illin)
 // ==/UserScript==
 
 // featurePolicy can still break it and I can't do anything about it :(
@@ -20,6 +20,7 @@ setInterval(() => {
     let iframes = document.querySelectorAll('iframe[src^="https://www.youtube.com/embed/"]')
     iframes.forEach((elem) => {
       elem.setAttribute('allowFullScreen', '')
+      elem.setAttribute('allow','fullscreen')
     })
   } else if (window.location.href.startsWith("https://www.youtube.com/embed")) {
     let fullscreenButton = document.getElementsByClassName("ytp-fullscreen-button")[0]
