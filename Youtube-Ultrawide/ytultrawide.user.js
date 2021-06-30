@@ -2,13 +2,14 @@
 // @name            YouTube Ultrawide
 // @version         0.1
 // @description     Crops the top and bottom to fit ultrawide
-// @author          C4illin
+// @author          uxamend (modified by C4illin)
 // @match           https://www.youtube.com/*
 // @match           https://www.youtube-nocookie.com/embed/*
 // @exclude-match   https://www.youtube.com/ad_frame*
 // @exclude-match   https://www.youtube.com/ad_companion*
 // @exclude-match   https://www.youtube.com/embed/
 // @exclude-match   https://www.youtube.com/video_masthead*
+// @icon            https://raw.githubusercontent.com/C4illin/Userscripts/master/Youtube-Ultrawide/icon.png
 // @grant           none
 // @run-at          document-idle
 // @license         CC0-1.0
