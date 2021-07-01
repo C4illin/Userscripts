@@ -14,8 +14,8 @@
       "96": "icons/icon96.png"
    },
    "manifest_version": 2,
-   "name": "Change User for Google Classroom",
-   "short_name": "Change User Classroom",
+   "name": "Google Classroom Change User",
+   "short_name": "Classroom Change User",
    "version": "1.2.2",
    "web_accessible_resources": [ "js/ChangeClassroom.user.js" ]
 }
