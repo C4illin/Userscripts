@@ -1,0 +1,17 @@
+test
+demo.mp4
+extra info.txt
+chrome-ext.pem
+.vscode
+*.zip
+extensions/chrome/js/ChangeClassroom.user.js
+.DS_Store
+extensions/microsoft/js/ChangeClassroom.user.js
+/extensions/microsoft/_locales
+/extensions/microsoft/html
+/extensions/microsoft/icons
+/extensions/microsoft/js
+/extensions/firefox/_locales
+/extensions/firefox/html
+/extensions/firefox/icons
+/extensions/firefox/js
