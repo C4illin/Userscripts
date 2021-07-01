@@ -21,7 +21,8 @@ setInterval(() => {
     iframes.forEach((elem) => {
       elem.setAttribute('allowFullScreen', '')
       elem.setAttribute('allow','fullscreen')
-      iframe.src = iframe.src; //Reload iframe, thanks to https://greasyfork.org/en/scripts/398281-allow-full-screen-on-embedded-youtube
+      // eslint-disable-next-line no-undef, no-self-assign
+      iframe.src = iframe.src //Reload iframe, thanks to https://greasyfork.org/en/scripts/398281-allow-full-screen-on-embedded-youtube
     })
   } else if (window.location.href.startsWith("https://www.youtube.com/embed")) {
     let fullscreenButton = document.getElementsByClassName("ytp-fullscreen-button")[0]
