@@ -14,7 +14,7 @@
 GM_info.script.homepageURL = "https://alkolist.github.io/"
 
 let refresh = setInterval(() => {
-  let main = document.querySelector(".col-md-7.offset-md-1")?.children
+  let main = document.querySelector(".e3nstog6.css-13scvr.eu83ww70")?.children
   if (main) {
     //let offset = 0
     let alkohol = main[2]?.firstChild?.firstChild?.children[2]?.children[0]?.innerText
