@@ -5,7 +5,7 @@
 // @icon        https://raw.githubusercontent.com/alkolist/alkolist.github.io/main/icon/android-chrome-512x512.png
 // @match       https://www.systembolaget.se/produkt/*
 // @grant       none
-// @version     1.7
+// @version     1.8
 // @author      C4illin <e@mrik.ga>
 // @homepageURL https://alkolist.github.io/
 // @run-at      document-idle
