@@ -16,8 +16,6 @@ A userscript that intelligently changes the Google Classroom user from /u/0/ to 
 
 Skips the "Click Here to Continue" buttons on Pricespy, Prisjakt, Kompario, Ledenicheur, Pagomeno and Hintaopas
 
-## APK Systembolaget - [Install](https://github.com/C4illin/Userscripts/raw/master/APK-Systembolaget/apk.systembolaget.user.js)
 
-Shows the APK on systembolaget product pages
 
 or view all scripts here: https://greasyfork.org/sv/users/217869-c4illin
